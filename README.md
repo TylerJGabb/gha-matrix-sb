@@ -1,0 +1,1 @@
+# A sandbox for experimenting with the `strategy` field in GHA jobs
