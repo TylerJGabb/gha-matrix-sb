@@ -1,0 +1,16 @@
+on: push
+
+jobs:
+  with-config:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - name: tyler
+            age: 30
+          - name: josh
+            age: 40
+    steps:
+      - name: Print the config
+        run: |
+          echo "Name: ${{ matrix.config.name }}, Age: ${{ matrix.config.age }}"
